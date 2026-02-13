@@ -687,18 +687,6 @@ Where Possible:
 
 ## Data Quality Metrics
 
-### Accuracy by Table
-
-| Table | PDF Accuracy | Method |
-|-------|--------------|--------|
-| raw_ytd | 100.00% | Perfect match with PDF |
-| raw_rolling_12m | 100.00% | Perfect match with PDF |
-| raw_current_month | 100.00% | Perfect match with PDF |
-| raw_brand_leaders | ~99% | Simple table extraction |
-| raw_brand_summary | 99.84% | Record-by-record validation |
-| raw_vendor_summary | 98.73% | Record-by-record validation |
-| raw_top100_vendors | ~99% | Simple table extraction |
-| raw_top20_vendors_by_class | ~98% | Multi-page extraction |
 
 ### Error Rates by Type
 
@@ -721,7 +709,7 @@ This documentation covers the complete extraction logic for all 8 NABCA tables. 
 - Position-based column extraction for accuracy
 - TOTAL row validation for mathematical verification
 - 3-step verification methodology
-- Conservative error handling (don't guess)
+- Conservative error handling 
 - Comprehensive logging for manual review
 
 **Overall System Accuracy: 98.7%+**
